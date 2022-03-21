@@ -1,0 +1,209 @@
+/* Paleta de colores */
+:root {
+    --first_color: rgb(255, 255, 255);
+    --second_color: rgb(238,243,255);
+    --third_color: rgb(42,74,200);
+    --txt_principal: rgb(70,100,226);
+    --txt_first: rgb(30,60,112);
+    --txt_second: rgb(162, 180, 170);
+}
+
+/* Reseteo de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* vertical-align: baseline; */
+}
+
+/* Estilos para las imagenes */
+img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+/* Resetear estilos para las etiquetas de texto */
+h1, h2, h3, p, a, span {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Resetear SVG */
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+body {
+    background-color: var(--first_color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    background-color: rgba(254, 254, 254, 0.5);
+}
+
+.footer {
+    background-color: var(--second_color);
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 10px;
+    width: 140px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-first {
+    background-color: var(--third_color);
+    color: var(--first_color);
+   
+}
+
+.btn-second {
+    background-color: var(--second_color);
+    color: var(--third_color);
+}
+
+.txt-logo {
+    color: var(--third_color);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nav {
+    color: var(--txt_second);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.title {
+    color: var(--txt_first);
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.txt {
+    color: var(--txt_second);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.txt-second {
+    color: var(--txt_first);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.txt-third {
+    color: var(--txt_first);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.nav-ft {
+    color: var(--txt_second);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.span {
+    color: var(--txt_first);
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 6px;
+}
+
+.img-first {
+    width: 600px;
+    object-fit: cover;
+}
+
+.img-ft {
+    width: 250px;
+    object-fit: cover;
+}
+
+.fa-shield-virus, .fa-star {
+    color: rgb(247, 247, 31);
+    padding: 7px;
+    margin: 1px solid black;
+    background-color: rgba(236, 236, 38, 0.205);
+}
+
+.fa-clock, .fa-location-dot, .fa-calendar-days, .fa-syringe {
+    color: var(--third_color);
+    padding: 5px;
+    margin: 1px solid black;
+    background-color: var(--second_color);
+    border-radius: 2px;
+}
+
+.fa-sliders, .fa-shield, .fa-user-group, .fa-chart-line {
+    color: var(--third_color);
+    padding: 8px;
+    margin: 1px solid black;
+    background-color: var(--second_color);
+    font-size: 24px;
+    border-radius: 2px;
+}
+
+.fa-ban, .fa-stethoscope, .fa-seedling, .fa-bed, .fa-person-walking {
+    color: var(--third_color);
+    padding: 5px;
+    margin: 1px solid black;
+    background-color: var(--second_color);
+    border-radius: 2px;
+}
+
+.fa-headset, .fa-comment-dots, .fa-video, .fa-message {
+    color: var(--third_color);
+    padding: 8px;
+    margin: 1px solid black;
+    background-color: var(--second_color);
+    font-size: 30px;
+    border-radius: 2px;
+}
+
+.fm-contact {
+    padding: 4px;
+    background-color: rgba(255, 255, 255, 0.26);
+}
+
+.crd-vcc {
+    margin: 1px solid black;
+    width: 200px;
+    padding-right: 10px;
+    direction: ltr;
+    align-items: inherit;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.container {
+    display: grid;
+    /* grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto; */
+    grid-template-areas: "header"
+                        "main"
+                        "footer";
+    
+}
+
